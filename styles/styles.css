@@ -1,7 +1,7 @@
 :root {
     --primary-color: #007bff;
     --secondary-color: #0056b3;
-    --background-color: #222;
+    --background-color: black;
     --text-color: white;
     --accent-color: #888;
 }
@@ -177,6 +177,9 @@ h1 {
     height: 400px;
 }
 
+#transition1 {
+    background-color: var(--background-color);
+}
 
 #transition2 {
     background-color: white;
@@ -236,4 +239,13 @@ h1 {
 
 .chrome-extension {
     border: 1px solid black
+}
+
+#about .card-body {
+    word-spacing: 6px;
+    font-size: larger
+}
+
+#about p {
+    margin-bottom: 40px;
 }
