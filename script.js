@@ -82,6 +82,23 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(target);
 });
 
+function copyToClipboard(selector, elementIndex) {
+  var element = document.querySelectorAll(selector)[elementIndex];
+  var tempInput = document.createElement("input");
+  tempInput.value = element.innerText;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+
+  Swal.fire({
+    title: "Copied!",
+    text: "Text copied to clipboard: " + element.innerText,
+    icon: "success",
+    confirmButtonText: "OK",
+  });
+}
+
 // Mobile
 function toggleMenu() {
   const navMenu = document.querySelector(".nav-menu");

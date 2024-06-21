@@ -17,6 +17,14 @@
     />
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="script.js" defer></script>
+    <!-- SweetAlert2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <!--Desktop nav-->
@@ -287,21 +295,15 @@
           <div class="row g-0"></div>
           <div class="col-md-12">
             <div class="card-body">
-              <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  gap: 10px 20px;
-                  flex-wrap: wrap;
-                  justify-content: center;
-                "
-              >
-                <span>jasonschen3@gmail.com</span>
+              <!-- Personal email -->
+              <div class="email-container">
+                <span class="emailText">jasonschen3@gmail.com</span>
                 <button
                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk"
                   tabindex="0"
                   type="button"
                   aria-label="Copied!"
+                  onclick="copyToClipboard('.emailText', 0)"
                 >
                   <svg
                     stroke="currentColor"
@@ -315,61 +317,56 @@
                   >
                     <path fill="none" d="M0 0h24v24H0z"></path>
                     <path
-                      d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                      d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c-1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
                     ></path>
                   </svg>
                   <span class="MuiTouchRipple-root css-w0pj6f"></span>
                 </button>
-                <!--School email-->
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    gap: 10px 20px;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                  "
-                >
-                  <span>jchen3200@gatech.edu</span>
-                  <button
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk"
-                    tabindex="0"
-                    type="button"
-                    aria-label="Copied!"
-                  >
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 24 24"
-                      height="25"
-                      width="25"
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="color: rgb(21, 20, 24); cursor: pointer"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path
-                        d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
-                      ></path>
-                    </svg>
-                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                  </button>
-                </div>
               </div>
+
+              <!-- School email -->
+              <div class="email-container">
+                <span class="emailText">jchen3200@gatech.edu</span>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk"
+                  tabindex="0"
+                  type="button"
+                  aria-label="Copied!"
+                  onclick="copyToClipboard('.emailText', 1)"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="25"
+                    width="25"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="color: rgb(21, 20, 24); cursor: pointer"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c-1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                    ></path>
+                  </svg>
+                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                </button>
+              </div>
+              <!--End-->
             </div>
           </div>
         </div>
       </div>
-      <!--Mobile-->
-      <footer class="footer">
-        <a href="https://www.linkedin.com/in/chensjason/" target="_blank">
-          <img src="images/linkedin.png" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/jasonschen3/" target="_blank">
-          <img src="images/github.webp" alt="GitHub" />
-        </a>
-      </footer>
     </div>
+    <!--Mobile-->
+    <footer class="footer">
+      <a href="https://www.linkedin.com/in/chensjason/" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/jasonschen3/" target="_blank">
+        <img src="images/github.webp" alt="GitHub" />
+      </a>
+    </footer>
 
     <div class="transition" id="transition2">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

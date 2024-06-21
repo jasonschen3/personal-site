@@ -195,9 +195,8 @@ h1 {
   color: black;
 }
 
-#projects,
-#about,
-#contact {
+.content > div {
+  /* border: 10px red solid; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -253,33 +252,19 @@ h1 {
   margin-bottom: 40px;
 }
 
-/* Specific measurements for each card */
-#stockbot {
-  width: 850px;
-}
-
-#prisoner-escape {
-  width: 850px;
-  height: 290px;
-}
-
-#political-bias {
+.content > div > div {
   width: 825px;
-  height: 560px;
+  height: 100%;
+  /* border: 10px red solid; */
 }
 
-#get-gt {
-  width: 825px;
-  height: 400px;
-}
-
-#about-card {
-  width: 825px;
-}
-
-#contact-card {
-  width: 850px;
-  height: 80px;
+.email-container {
+  display: flex;
+  align-items: center;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
 }
 
 /* Mobile devices CSS */
@@ -298,7 +283,7 @@ h1 {
   }
 
   .footer {
-    margin: 0;
+    margin: -1px 0;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -306,7 +291,7 @@ h1 {
     padding: 10px;
     background-color: white;
 
-    margin-bottom: -1px; /* gets rid of tiny line */
+    width: 100%;
   }
 
   .footer img {
