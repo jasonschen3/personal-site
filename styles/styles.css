@@ -18,6 +18,9 @@ body {
 
   /* Font */
   font-family: "Baskerville", serif;
+
+  /* Zoom */
+  touch-action: pan-y;
 }
 
 .top-nav {
