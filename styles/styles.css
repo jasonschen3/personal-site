@@ -396,12 +396,7 @@ h1 {
     min-width: 80px; /* Ensure buttons have a minimum width */
   }
 
-  #stockbot,
-  #prisoner-escape,
-  #political-bias,
-  #get-gt,
-  #about-card,
-  #contact-card {
+  .content > div > div {
     width: 90%;
     margin: 0 auto; /* Center the card */
     height: auto;
