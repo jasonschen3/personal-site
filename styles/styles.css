@@ -179,7 +179,7 @@ h1 {
 }
 
 .transition svg {
-  height: 400px;
+  margin: -1px;
 }
 
 #transition1 {
@@ -380,10 +380,6 @@ h1 {
     text-decoration: none;
     border-radius: 5px;
     font-size: 24px;
-  }
-
-  .transition svg {
-    height: 100%;
   }
 
   .transition {
