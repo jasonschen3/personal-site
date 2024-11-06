@@ -8,6 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  var target = document.getElementById("hermedoc");
+  observer.observe(target);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("slide-in-left");
+        observer.unobserve(entry.target); // Stop observing after animation
+      }
+    });
+  });
+
   var target = document.getElementById("otek");
   observer.observe(target);
 });
