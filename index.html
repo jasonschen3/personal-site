@@ -25,6 +25,12 @@
 
     <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--Fix scalable on mobile-->
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
   </head>
   <body>
     <!--Desktop nav-->
@@ -36,7 +42,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <a
-        href="https://github.com/jasonschen3/resume"
+        href="/Chen_Fall_2024.pdf"
         target="_blank"
         class="resume-btn"
         >Resume</a
@@ -67,7 +73,7 @@
         <li><a href="#contact">Contact</a></li>
         <li>
           <a
-            href="https://github.com/jasonschen3/resume"
+            href="/Chen_Fall_2024.pdf"
             target="_blank"
             class="resume-btn"
             >Resume</a
@@ -88,7 +94,7 @@
       <h1>Hi, I'm Jason.</h1>
       <p class="description">Software Engineer and CS Student</p>
       <div class="profile-pic">
-        <img src="images/freshman-photo.png" alt="Profile Picture" />
+        <img src="images/sophomore-centered.png" alt="Profile Picture" />
       </div>
       <div class="scroll-down">
         <p>Scroll down</p>
@@ -101,7 +107,6 @@
       <svg width="100%" viewBox="0 0 1200 200" preserveAspectRatio="none">
         <path
           d="M0,100 C300,200 900,0 1200,100 L1200,200 L0,200 Z"
-          style="fill: #ffffff"
         ></path>
       </svg>
     </div>
@@ -109,6 +114,124 @@
       <div id="projects">
         <h2>Projects</h2>
         <br />
+        <!-- Hermedoc -->
+        <div class="card mb-5" id="hermedoc">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img
+                src="images/hermedoc.png"
+                class="img-fluid rounded-start"
+                alt="hermedoc"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h4 class="card-title">Hermedoc</h4>
+                <p class="card-text">
+                  Progressive Web App functioning as a chatbot tailored for secure document interaction and retrieval by leveraging Llama-3 for local processing and Retrieval-Augmented Generation.
+                </p>
+                <p class="tech-used">
+                  <button type="button" class="btn btn-info">React</button>
+                  <button type="button" class="btn btn-info">Flask</button>
+                  <button type="button" class="btn btn-info">Python</button>
+                  <button type="button" class="btn btn-info">
+                    Ollama
+                  </button>
+                  <br /><br />
+                  <a
+                    href="https://github.com/jasonschen3/hermedoc"
+                    type="button"
+                    class="btn btn-dark"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Otek Reporting -->
+        <div class="card mb-5" id="otek">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img
+                src="images/otek.png"
+                class="img-fluid rounded-start"
+                alt="otek"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h4 class="card-title">OTEK Reporting System</h4>
+                <p class="card-text">
+                  Web app with authentication that manages projects, staff, daily logs, expenses, and other data, featuring an automatic notification system and a supplemental mobile app.
+                </p>
+                <p class="tech-used">
+                  <button type="button" class="btn btn-info">React</button>
+                  <button type="button" class="btn btn-info">Node.js</button>
+                  <button type="button" class="btn btn-info">SQL</button>
+                  <button type="button" class="btn btn-info">React Native</button>
+                  <button type="button" class="btn btn-info">
+                    AWS
+                  </button>
+                  <button type="button" class="btn btn-info">
+                    Vim
+                  </button>
+                  <button type="button" class="btn btn-info">
+                    PostgreSQL
+                  </button>
+                  <br /><br />
+                  <a
+                    href="https://github.com/jasonschen3/otek-reporting"
+                    type="button"
+                    class="btn btn-dark"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Illuminate AI-->
+        <div class="card mb-5" id="illuminate">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img
+                src="images/illuminate.png"
+                class="img-fluid rounded-start"
+                alt="illuminate"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h4 class="card-title">Illuminate AI</h4>
+                <p class="card-text">
+                  Web app that generates graphs or data based on specific queries from a user uploaded CSV file.
+                </p>
+                <p class="tech-used">
+                  <button type="button" class="btn btn-info">React</button>
+                  <button type="button" class="btn btn-info">Node.js</button>
+                  <button type="button" class="btn btn-info">SQL</button>
+                  <button type="button" class="btn btn-info">
+                    OpenAI API
+                  </button>
+                  <button type="button" class="btn btn-info">
+                    PostgreSQL
+                  </button>
+                  <br /><br />
+                  <a
+                    href="https://devfolio.co/projects/illuminateai-0b89"
+                    type="button"
+                    class="btn btn-dark"
+                    target="_blank"
+                    >Devfolio Link</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--Stockbot-->
         <div class="card mb-5" id="stockbot">
           <div class="row g-0">
@@ -175,7 +298,7 @@
                     type="button"
                     class="btn btn-dark"
                     target="_blank"
-                    >Github</a
+                    >GitHub</a
                   >
                 </p>
               </div>
@@ -230,7 +353,7 @@
               <div class="card-body">
                 <h4 class="card-title">Get GT</h4>
                 <p class="card-text">
-                  Fun spinoff of GetMIT (which is spinoff of 2024).
+                  Fun spinoff of GetMIT (which is spinoff of 2048).
                 </p>
                 <p class="tech-used">
                   <button type="button" class="btn btn-info">HTML/CSS</button>
@@ -242,7 +365,7 @@
                     type="button"
                     class="btn btn-dark"
                     target="_blank"
-                    >Github</a
+                    >GitHub</a
                   >
                 </p>
               </div>
@@ -262,16 +385,14 @@
             <div class="col-md-12">
               <div class="card-body">
                 <p class="card-text">
-                  Hello! I'm Jason Chen, a student at Georgia Tech studying
+                  Hello! I'm <strong>Jason Chen</strong>, a student at Georgia Tech studying
                   Computer Science. Originally from the Denver Metro Area in
                   Colorado, I have a passion for technology and innovation that
                   has driven me to gain valuable experience through various
                   clubs, internships, and personal projects.
                 </p>
                 <p>
-                  I am particularly interested in full-stack development and am
-                  working to break into the finance sector via mentorship in
-                  GTSF Investments Committee. My involvement in GT Web Dev club
+                  I am particularly interested in full-stack development and making cool applications. My involvement in GT Web Dev club
                   has allowed me to hone my technical skills and gain experience
                   working on a team. Additionally, being a member of the Kappa
                   Sigma Fraternity has enriched my college experience, providing
@@ -279,8 +400,7 @@
                   via philanthropy initiatives.
                 </p>
                 <p>
-                  In my free time, I love playing basketball, lifting, and being
-                  outdoors.
+                  In my free time, I love basketball, reading, poker, hiking, and recently got into rowing.
                 </p>
               </div>
             </div>
@@ -371,7 +491,6 @@
     <div class="transition" id="transition2">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="black"
           fill-opacity="1"
           d="M0,32L34.3,48C68.6,64,137,96,206,112C274.3,128,343,128,411,112C480,96,549,64,617,74.7C685.7,85,754,139,823,170.7C891.4,203,960,213,1029,192C1097.1,171,1166,117,1234,90.7C1302.9,64,1371,64,1406,64L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
         ></path>
