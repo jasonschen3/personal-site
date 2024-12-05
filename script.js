@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var observer = new IntersectionObserver(function (entries, observer) {
+  // Initialize the IntersectionObserver
+  const observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         entry.target.classList.add("slide-in-left");
@@ -8,125 +9,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  var target = document.getElementById("hermedoc");
-  observer.observe(target);
-});
+  const targetIds = [
+    "hermedoc",
+    "otek",
+    "illuminate",
+    "stockbot",
+    "prisoner-escape",
+    "political-bias",
+    "get-gt",
+    "about-card",
+    "contact-card",
+  ];
 
-document.addEventListener("DOMContentLoaded", function () {
-  var observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slide-in-left");
-        observer.unobserve(entry.target); // Stop observing after animation
-      }
-    });
+  // Observe each target
+  targetIds.forEach((id) => {
+    const target = document.getElementById(id);
+    if (target) observer.observe(target);
   });
-
-  var target = document.getElementById("otek");
-  observer.observe(target);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slide-in-left");
-        observer.unobserve(entry.target); // Stop observing after animation
-      }
-    });
-  });
-
-  var target = document.getElementById("illuminate");
-  observer.observe(target);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slide-in-left");
-        observer.unobserve(entry.target); // Stop observing after animation
-      }
-    });
-  });
-
-  var target = document.getElementById("stockbot");
-  observer.observe(target);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slide-in-left");
-        observer.unobserve(entry.target); // Stop observing after animation
-      }
-    });
-  });
-
-  var target = document.getElementById("prisoner-escape");
-  observer.observe(target);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slide-in-left");
-        observer.unobserve(entry.target); // Stop observing after animation
-      }
-    });
-  });
-
-  var target = document.getElementById("political-bias");
-  observer.observe(target);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slide-in-left");
-        observer.unobserve(entry.target); // Stop observing after animation
-      }
-    });
-  });
-
-  var target = document.getElementById("get-gt");
-  observer.observe(target);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slide-in-left");
-        observer.unobserve(entry.target); // Stop observing after animation
-      }
-    });
-  });
-
-  var target = document.getElementById("about-card");
-  observer.observe(target);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slide-in-left");
-        observer.unobserve(entry.target); // Stop observing after animation
-      }
-    });
-  });
-
-  var target = document.getElementById("contact-card");
-  observer.observe(target);
-});
-
+// Function to copy text to clipboard
 function copyToClipboard(selector, elementIndex) {
-  var element = document.querySelectorAll(selector)[elementIndex];
-  var tempInput = document.createElement("input");
+  const element = document.querySelectorAll(selector)[elementIndex];
+  const tempInput = document.createElement("input");
   tempInput.value = element.innerText;
   document.body.appendChild(tempInput);
   tempInput.select();
@@ -135,13 +40,13 @@ function copyToClipboard(selector, elementIndex) {
 
   Swal.fire({
     title: "Copied!",
-    text: "Text copied to clipboard: " + element.innerText,
+    text: `Text copied to clipboard: ${element.innerText}`,
     icon: "success",
     confirmButtonText: "OK",
   });
 }
 
-// Mobile
+// Function to toggle mobile navigation menu
 function toggleMenu() {
   const navMenu = document.querySelector(".nav-menu");
   navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
