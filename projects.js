@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "images/hermedoc.png",
       techStack: ["React", "Flask", "Python", "Ollama"],
       link: "https://github.com/jasonschen3/hermedoc",
+      linkName: "Github",
     },
     {
       id: "otek",
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "PostgreSQL",
       ],
       link: "https://github.com/jasonschen3/otek-reporting",
+      linkName: "Github",
     },
     {
       id: "illuminate",
@@ -34,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "images/illuminate.png",
       techStack: ["React", "Node.js", "SQL", "OpenAI API", "PostgreSQL"],
       link: "https://devfolio.co/projects/illuminateai-0b89",
+      linkName: "Devfolio",
     },
     {
       id: "stockbot",
@@ -49,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Financial Modeling Prep API",
       ],
       link: "https://devpost.com/software/stock-clock",
+      linkName: "Devpost",
     },
     {
       id: "prisoner-escape",
@@ -58,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "images/prisoner-escape.png",
       techStack: ["C", "Docker"],
       link: "https://github.com/jasonschen3/prisoner-escape/",
+      linkName: "Github",
     },
     {
       id: "political-bias",
@@ -67,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "images/political-bias.png",
       techStack: ["Node.js", "Python", "Flask"],
       link: "https://symposium.foragerone.com/2022-dmrsef/presentations/36573/",
+      linkName: "Symposium",
     },
     {
       id: "get-gt",
@@ -75,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "images/get-gt.png",
       techStack: ["HTML/CSS", "Figma", "JS"],
       link: "https://github.com/jasonschen3/get-gt",
+      linkName: "Github",
     },
   ];
 
@@ -100,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     .join("")}
                 </div>
                 <br />
-                <a href="${project.link}" class="btn btn-dark" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="${project.link}" class="btn btn-dark" target="_blank" rel="noopener noreferrer">${project.linkName}</a>
               </div>
             </div>
           </div>
