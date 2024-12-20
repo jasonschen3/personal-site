@@ -25,8 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Vim",
         "PostgreSQL",
       ],
-      link: "https://github.com/jasonschen3/otek-reporting",
-      linkName: "Github",
+      // Private
     },
     {
       id: "illuminate",
@@ -71,8 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "Research project that classified the political ideology of Reddit headlines and later, entire news articles.",
       image: "images/political-bias.png",
       techStack: ["Node.js", "Python", "Flask"],
-      link: "https://symposium.foragerone.com/2022-dmrsef/presentations/36573/",
-      linkName: "Symposium",
+      link: "/JasonChenPaper.pdf",
+      linkName: "Paper",
     },
     {
       id: "get-gt",
@@ -107,7 +106,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     .join("")}
                 </div>
                 <br />
-                <a href="${project.link}" class="btn btn-dark" target="_blank" rel="noopener noreferrer">${project.linkName}</a>
+                ${
+                  project.link && project.linkName
+                    ? `<a href="${project.link}" class="btn btn-dark" target="_blank" rel="noopener noreferrer">${project.linkName}</a>`
+                    : ""
+                }
               </div>
             </div>
           </div>
