@@ -297,8 +297,8 @@ h1 {
 }
 
 .profile-pic {
-  width: 300px; /* Adjust size as needed */
-  height: 300px;
+  width: 275px; /* Adjust size as needed */
+  height: 275px;
   margin: 20px auto;
   border: 8px solid var(--text-black); /* White border around the circle */
   border-radius: 50%; /* Makes it a perfect circle */
@@ -362,7 +362,6 @@ h1 {
     align-items: center;
     padding: 10px 20px;
     color: #fff;
-
     margin-bottom: -100px;
   }
   .mobile-nav .logo {
@@ -392,6 +391,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #000;
+    opacity: 0.9;
   }
 
   .nav-menu ul {
