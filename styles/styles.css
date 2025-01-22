@@ -1,22 +1,24 @@
 :root {
   --primary-color: #007bff;
   --secondary-color: #0056b3;
-  --background-color: rgb(60, 60, 60);
+  --background-color: white;
   --text-color: #ededed;
   --accent-color: #888;
+  --text-black: black;
 }
 
 body {
   margin: 0;
   padding: 0;
   background: var(--background-color);
+  background-size: cover;
   color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   width: 100%;
-  /* Prevent scrolling horizonatally*/
+  /* Prevent scrolling horizontally */
   overflow-x: hidden;
 
   /* Font */
@@ -26,6 +28,16 @@ body {
   touch-action: pan-y;
 }
 
+h1,
+h2,
+.description,
+.nav-links a,
+.resume-btn,
+.emailText,
+.scroll-down {
+  color: var(--text-black); /* Apply dark blue color */
+}
+
 .top-nav {
   flex: 1;
   width: 70%;
@@ -33,14 +45,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background: transparent;
   top: 0;
 }
 
 .logo {
   font-weight: bold;
-  width: 8vw;
-  height: 8wh;
+  width: 200px;
   padding: 30px;
   padding-left: 50px;
 }
@@ -59,7 +69,6 @@ body {
 }
 
 .nav-links a {
-  color: white;
   text-decoration: none;
   font-size: 1em;
 }
@@ -99,7 +108,6 @@ body {
 
 .main-content {
   text-align: center;
-  margin-top: 100px;
   animation: fadeInUp 2s ease-in-out forwards;
   animation-delay: 1s;
 }
@@ -115,7 +123,7 @@ h1 {
 }
 
 .description {
-  font-size: 1.2em;
+  font-size: 1.8em;
   color: #888;
 }
 
@@ -135,6 +143,7 @@ h1 {
   position: relative;
   margin: 10px auto;
   animation: bounce 2s infinite;
+  background-color: black;
 }
 
 .wheel {
@@ -184,6 +193,7 @@ h1 {
 
 #transition1 {
   background-color: var(--background-color);
+  /* background: url("../images/black.jpg") no-repeat center center fixed; */
 }
 
 #transition1 path {
@@ -278,6 +288,32 @@ h1 {
   padding: 10px;
 }
 
+/* Profile pic styles */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.profile-pic {
+  width: 300px; /* Adjust size as needed */
+  height: 300px;
+  margin: 20px auto;
+  border: 8px solid var(--text-black); /* White border around the circle */
+  border-radius: 50%; /* Makes it a perfect circle */
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+  margin: 5vw;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the circle */
+}
+
 /* Mobile devices CSS */
 /* Hide mobile elements by default in desktop*/
 
@@ -306,9 +342,9 @@ h1 {
     justify-content: center;
     gap: 30px;
     padding: 10px;
-    background-color: white;
-
+    background-color: var(--text-color);
     width: 100%;
+    fill-opacity: 0;
   }
 
   .footer img {
@@ -342,6 +378,7 @@ h1 {
   .menu-icon {
     font-size: 50px;
     cursor: pointer;
+    color: var(--text-black);
   }
 
   .nav-menu {
@@ -351,12 +388,10 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
     z-index: 999;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
   }
 
   .nav-menu ul {
@@ -385,6 +420,10 @@ h1 {
     font-size: 24px;
   }
 
+  .main-content {
+    margin-top: 100px;
+  }
+
   .transition {
     margin-bottom: -1px;
   }
@@ -406,5 +445,8 @@ h1 {
     flex: 1 1 auto;
     margin: 5px;
     min-width: 80px; /* Ensure buttons have a minimum width */
+  }
+  .profile-container {
+    display: block;
   }
 }
