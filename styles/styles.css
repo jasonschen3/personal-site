@@ -107,9 +107,10 @@ h2,
 }
 
 .main-content {
+  opacity: 0;
   text-align: center;
   animation: fadeInUp 2s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .profile-pic img {
