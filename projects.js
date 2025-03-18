@@ -1,6 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
   const projects = [
     {
+      id: "creekocw",
+      title: "Creek OCW",
+      description: "Ongoing",
+      image: "images/creekocw.png",
+      techStack: ["Next.js", "Drizzle", "Tailwind", "More"],
+      link: "https://www.creekocw.com/",
+      linkName: "Site",
+    },
+    {
+      id: "lunchbox",
+      title: "Lunchbox",
+      description:
+        "Web app featuring order management, bilingual support, Stripe checkout, email confirmation, and JWT authentication.",
+      image: "images/lunchbox.png",
+      techStack: [
+        "React",
+        "Typescript",
+        "Webhooks",
+        "Stripe",
+        "Nodemailer",
+        "Node.js",
+        "AWS",
+        "PostgreSQL",
+      ],
+      link: "https://github.com/jasonschen3/lunchbox",
+      linkName: "Github",
+    },
+    {
       id: "hermedoc",
       title: "Hermedoc",
       description:
