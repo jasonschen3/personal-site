@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: "creekocw",
       title: "Creek OCW",
-      description: "Ongoing",
+      description:
+        "Notes website for my old high school used by over 2000 students.",
       image: "images/creekocw.png",
       techStack: ["Next.js", "Drizzle", "Tailwind", "More"],
       link: "https://www.creekocw.com/",
