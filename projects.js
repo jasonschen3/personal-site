@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Notes website for my old high school used by over 2000 students.",
       image: "images/creekocw.png",
-      techStack: ["Next.js", "Drizzle", "Tailwind", "More"],
+      techStack: ["Next.js", "Drizzle", "Tailwind"],
       link: "https://www.creekocw.com/",
       linkName: "Site",
     },
