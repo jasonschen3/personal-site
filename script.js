@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const targetIds = [
     "creekocw",
-    "launchz",
     "lunchbox",
     "hermedoc",
     "otek",
