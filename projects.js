@@ -1,6 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const projects = [
     {
+      id: "tnkr",
+      title: "TNKR Sneaker Marketplace",
+      description:
+        "Shoe marketplace connecting customers with technicians (ongoing project).",
+      image: "images/tnkr.png",
+      techStack: ["Next.js", "Prisma", "Node.js", "AWS"],
+      link: "https://www.tnkrshoes.com/",
+      linkName: "Site",
+    },
+    {
       id: "creekocw",
       title: "Creek OCW",
       description:

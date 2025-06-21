@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const targetIds = [
+    "tnkr",
     "creekocw",
     "lunchbox",
     "hermedoc",
