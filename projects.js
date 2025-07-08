@@ -6,7 +6,16 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Shoe marketplace connecting customers with technicians (ongoing project).",
       image: "images/tnkr.png",
-      techStack: ["Next.js", "Prisma", "Node.js", "AWS"],
+      techStack: [
+        "Next.js",
+        "Prisma",
+        "Node.js",
+        "AWS",
+        "WebSockets",
+        "Redis",
+        "Stripe",
+        "Shippo",
+      ],
       link: "https://www.tnkrshoes.com/",
       linkName: "Site",
     },
