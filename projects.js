@@ -52,11 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "hermedoc",
       title: "Hermedoc",
       description:
-        "Progressive Web App functioning as a chatbot tailored for secure document interaction and retrieval by leveraging Llama-3 for local processing and Retrieval-Augmented Generation.",
-      image: "images/hermedoc.png",
+        "Local LLM functioning as a chatbot tailored for secure document interaction and retrieval by leveraging Llama-3",
+      image: "images/herma.png",
       techStack: ["React", "Flask", "Python", "Ollama"],
-      link: "https://github.com/jasonschen3/hermedoc",
-      linkName: "Github",
+      link: "https://hermaai.com/",
+      linkName: "site",
     },
     {
       id: "otek",
