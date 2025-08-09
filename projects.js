@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "tnkr",
       title: "TNKR Sneaker Marketplace",
       description:
-        "Shoe marketplace connecting customers with technicians (ongoing project).",
+        "Shoe marketplace connecting customers with technicians with 100 users.",
       image: "images/tnkr.png",
       techStack: [
         "Next.js",
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "WebSockets",
         "Redis",
         "Stripe",
-        "Shippo",
+        "Terraform",
       ],
       link: "https://www.tnkrshoes.com/",
       linkName: "Site",
